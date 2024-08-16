@@ -1,0 +1,399 @@
+BookTrip CSS .bg-container {
+  height: 87.7vh;
+  background-color: #dbeafe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-trip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.steps-container {
+  display: flex;
+  width: 100%;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  padding: 20px;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.step {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.step.active {
+  color: #3b82f6;
+}
+
+.step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #3b82f6;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: solid 1px;
+  border-color: #cbd5e1;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  background-color: #304766;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.step-content {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-content h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.step-content label {
+  color: #333;
+  margin: 10px 0 5px;
+  align-self: flex-start;
+  font-size: 13px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.step-content .input-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* .step-content input[type='text'],
+.step-content input[type='date'],
+.step-content input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
+.guest-input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.step-content button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3b82f6;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .step-content button:hover {
+  background-color: #2563eb;
+} */
+
+.step-content .error-input {
+  border: 2px solid #dc3545;
+}
+
+.step-content .error-message {
+  color: #dc3545;
+  margin: 3px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.step-content .error-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #e65f6c;
+  border-radius: 5px;
+}
+
+.step-content .previous-btn {
+  background-color: #dbeafe;
+  color: #2563eb;
+  margin-right: 30px;
+}
+
+/* .error-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+} */
+
+.confirmation-message {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  color: #007bff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.details-head {
+  text-align: center;
+}
+
+.red-placeholder::placeholder {
+  color: red;
+}
+
+.guest-selection-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 370px;
+  color: #2f4562;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+}
+
+.guest-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.guest-row span {
+  text-align: left;
+  display: block;
+}
+
+.guest-controls {
+  display: flex;
+  align-items: center;
+}
+
+.guest-controls button {
+  background-color: transparent;
+  border: solid 1px #e2e8f0;
+  color: #2f4562;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.guest-controls span {
+  margin: 0 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev-button {
+  background-color: #dbeafe;
+  color: #2563eb;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.next-button {
+  background-color: #007bff;
+  color: white;
+  margin-top: 30px;
+}
+
+.hr-line {
+  border-top: 1px solid #dbeafe;
+}
+
+.text-size {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.travel-assistance-container {
+  margin-bottom: 20px;
+}
+
+.confirmation-message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.assist-btn-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.dropdown-container {
+  margin-top: 10px;
+}
+
+.dropdown-container select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.input-box {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.dropdown-container .assist-option-head {
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.confirm-card-container {
+  height: 360px;
+  width: 300px;
+  background-color: #fff;
+  padding-left: 30px;
+  border-radius: 10px;
+}
+
+.confirm-card-container .confirm-text {
+  color: #475569;
+}
+
+.upload-container {
+  background-color: #fff;
+  height: 250px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.step.active .step-number {
+  background-color: #3b82f6; /* Blue background for active step */
+  color: #fff; /* White font color for active step number */
+}
+
+.step-number {
+  background-color: #fff; /* Default background color */
+  color: #1e293b; /* Default font color */
+  border: solid 1px #cbd5e1;
+}
+
+.completed-img {
+  height: 80px;
+  width: 80px;
+}
+
+.new-trip-button {
+  background-color: #2563eb;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #fff;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.complete-head {
+  color: #1e293b;
+  font-family: 'Roboto';
+}
+
+.complete-para {
+  color: #334155;
+  font-family: 'Roboto';
+}

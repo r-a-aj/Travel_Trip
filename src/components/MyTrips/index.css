@@ -1,0 +1,95 @@
+.my-trips-container {
+  padding: 20px;
+}
+
+.trip-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.trip-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+}
+
+.trip-card h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #1e293b;
+}
+
+.no-trips-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.travel-bag-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.empty-trip-head {
+  color: #475569;
+  font-size: 22px;
+  font-family: 'Roboto';
+}
+
+.empty-trip-para {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.new-trip-button {
+  background-color: #2563eb;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #fff;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.trip-head {
+  display: flex;
+  justify-content: left;
+}
+
+.new-trip-cancel-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 1px #2563eb;
+  font-size: 12px;
+  font-family: 'Roboto';
+  color: #2563eb;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.trip-date {
+  color: #475569;
+  font-size: 12px;
+  margin: 10px;
+}
