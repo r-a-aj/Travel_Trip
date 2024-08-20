@@ -1,6 +1,5 @@
-import {useState, useContext} from 'react'
+import React, {useState, useContext} from 'react'
 import {useHistory} from 'react-router-dom'
-import axios from 'axios'
 import {Context} from '../Context/context'
 import './index.css'
 
@@ -15,15 +14,28 @@ const Login = () => {
   const handleLogin = async e => {
     e.preventDefault()
     try {
-      const response = await axios.post('https://apis.ccbp.in/login', {
-        username,
-        password,
+      const response = await fetch('https://apis.ccbp.in/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username,
+          password,
+        }),
       })
-      if (response.data.success) {
-        login()
+
+      // Parse the response body as JSON
+      const data = await response.json()
+
+      if (response.ok) {
+        // Success: Store the JWT token and redirect to the home page
+        localStorage.setItem('jwt_token', data.jwt_token)
+        login() // Assuming this sets an authentication state
         history.push('/home')
       } else {
-        setError(response.data.message)
+        // Failure: Display the error message
+        setError(data.error_msg || 'Login failed. Please try again.')
       }
     } catch (err) {
       setError('An error occurred. Please try again.')
