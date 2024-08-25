@@ -18,7 +18,7 @@ function Header() {
         </Link>
       </nav>
       {isAuthenticated && (
-        <button type="button" onClick={logout}>
+        <button type="button" className="logout-button" onClick={logout}>
           Logout
         </button>
       )}
