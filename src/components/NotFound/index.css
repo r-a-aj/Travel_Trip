@@ -41,3 +41,27 @@
   width: 400px;
   margin-top: 30px;
 }
+
+@media (max-width: 768px) {
+  .not-found-container {
+    padding: 20px;
+  }
+
+  .not-found-container h1 {
+    font-size: 24px;
+  }
+
+  .not-found-container p {
+    font-size: 14px;
+  }
+
+  .not-found-container button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .not-found-img {
+    width: 100%;
+    height: auto;
+  }
+}
