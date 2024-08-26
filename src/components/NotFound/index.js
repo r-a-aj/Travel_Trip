@@ -10,7 +10,7 @@ const NotFound = () => (
   <div className="not-found-container">
     <img
       src="https://inspirefcu.org/wp-content/uploads/2022/09/404-inspire-e1698689452515.png"
-      alt="not-found"
+      alt="not found"
       className="not-found-img"
     />
     <h1>Page Not Found.</h1>
