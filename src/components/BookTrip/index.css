@@ -1,4 +1,4 @@
-BookTrip CSS .bg-container {
+.bg-container {
   height: 87.7vh;
   background-color: #dbeafe;
   display: flex;
@@ -110,16 +110,6 @@ BookTrip CSS .bg-container {
   border-radius: 5px;
 }
 
-/* .step-content input[type='text'],
-.step-content input[type='date'],
-.step-content input[type='number'] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-} */
-
 .guest-input {
   width: 100%;
   margin-bottom: 10px;
@@ -134,10 +124,6 @@ BookTrip CSS .bg-container {
   color: #fff;
   cursor: pointer;
 }
-
-/* .step-content button:hover {
-  background-color: #2563eb;
-} */
 
 .step-content .error-input {
   border: 2px solid #dc3545;
@@ -164,16 +150,6 @@ BookTrip CSS .bg-container {
   color: #2563eb;
   margin-right: 30px;
 }
-
-/* .error-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
-} */
 
 .confirmation-message {
   color: #28a745;
