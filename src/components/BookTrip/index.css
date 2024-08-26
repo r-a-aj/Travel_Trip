@@ -373,3 +373,41 @@ p {
   color: #334155;
   font-family: 'Roboto';
 }
+
+@media (max-width: 768px) {
+  .bg-container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .book-trip-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .steps {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .form-container {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+  }
+
+  .step-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .guest-selection-container {
+    width: 100%;
+  }
+}
+
