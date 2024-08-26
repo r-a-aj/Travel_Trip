@@ -23,7 +23,7 @@ function MyTrips({trips}) {
             <button
               type="button"
               className="new-trip-button"
-              onClick={() => history.push('/BookTrip')}
+              onClick={() => history.push('/login')}
             >
               Book a New Trip
             </button>
