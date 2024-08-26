@@ -93,3 +93,29 @@ button {
   font-size: 12px;
   margin: 10px;
 }
+
+@media (max-width: 768px) {
+  .trip-cards-container {
+    padding: 10px;
+  }
+
+  .trip-card {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trip-card h3 {
+    font-size: 18px;
+  }
+
+  .trip-date {
+    margin: 5px 0;
+  }
+
+  .new-trip-cancel-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
